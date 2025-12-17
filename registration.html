@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+</head>
+<body>
+    <h1><b>Registration Form</b></h1>
+    <form action="submit.php" method="post">
+        <table>
+            <label for="name">Name :</label>
+            <input type="text" id="name">
+            <br><br>
+            <label for="email">E-mail :</label>
+            <input type="email" id="email">
+            <br><br>
+            <label for="number">Phone Number:</label>
+            <input type="number" id="number">
+            <br><br>
+            <label for="password">Password :</label>
+            <input type="password" id="number">
+            <br><br>
+            <label for="Gender">Gender</label>
+            <input type="radio" name="gen" id="male" value="male">
+            <label for="male">Male</label>
+            <br>
+            <input type="radio" name="gen" id="female" value="female">
+            <label for="female">Female</label>
+            <br>
+            <input type="radio" name="gen" id="other" value="other">
+            <br><br>
+            <button type="reset">Reset</button>
+            <button type="submit">Register</button>
+        </table>
+    </form>
+</body>
+</html>
