@@ -1,0 +1,32 @@
+#Container{
+    background-color: rgb(5, 5, 87);
+    height: 200px;
+    width: 300px;
+    position: relative;
+}
+#circle{
+    background-color: white;
+    height: 80px;
+    width: 80px;
+    border-radius: 50%;
+    position: absolute;
+    left: 100px;
+    top: 60px;
+}
+.box{
+    box-sizing: border-box;
+    position: absolute;
+}
+
+.first{
+    background-color: red;
+    height: 50px;
+    width: 300px;
+}
+
+.second{
+        background-color: red;
+        height: 50px;
+        width: 300px;
+        bottom: 0px;
+}

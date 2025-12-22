@@ -1,0 +1,45 @@
+*{
+    padding: 0;
+    margin: 0;
+    border-sizing: border-box;
+}
+
+body{
+    background-color: black;
+    color: white;
+    font-size: 30px;
+
+}
+
+.container{
+        display: grid;
+        height: 500px;
+        width: 500px;
+        grid-template-columns: 1fr 1fr 1fr ;
+        grid-template-rows: 1fr 2fr 2fr 1fr ;
+        gap: 20px;
+        padding: 10px;
+}
+
+.Box{
+    background-color: blueviolet;
+}
+
+.Header{
+     grid-column-start: 1;
+     grid-column-end: 4;
+}
+
+.Slidebar{
+        grid-row-start: 2;
+        grid-row-end: 4;
+}
+
+.Content1{
+        grid-column-start: 2;
+        grid-column-end: 4;
+}
+
+.Footer{
+        grid-column: 1/4;
+}
