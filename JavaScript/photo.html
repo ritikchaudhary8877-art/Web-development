@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Nature Image</title>
+  <style>
+    img {
+      width: 300px;
+      transition: 0.3s;
+    }
+
+    .bw {
+      filter: grayscale(100%);
+    }
+  </style>
+</head>
+<body>
+
+<h2>Nature Image</h2>
+
+<img id="img" src="https://cdn.pixabay.com/photo/2018/11/09/08/08/forest-3804001_1280.jpg"><br><br>
+
+<button onclick="blackWhite()">Black & White</button>
+<button onclick="color()">Colour</button>
+<!-- <button onclick="download()">Download</button> -->
+
+<script>
+function blackWhite() {
+  document.getElementById("img").classList.add("bw");
+}
+
+function color() {
+  document.getElementById("img").classList.remove("bw");
+}
+
+function download() {
+  let link = document.createElement("a");
+  link.href = document.getElementById("img").src;
+  link.download = "nature.jpg";
+  link.click();
+}
+</script>
+
+</body>
+</html>

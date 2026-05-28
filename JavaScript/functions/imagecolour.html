@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 style="text-align: center;">Colour Change</h1>
+    <!-- <img id="photo"  src="./taxture-scenery-poster.jpg" width="500px"> -->
+    <iframe id="photo" width="560" height="315" src="https://www.youtube.com/embed/A_fsolfKviI?si=TQ7mompm18c3TdfH" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>">
+ 
+    <br><br>
+
+    <button onclick="makeCl()">Colour</button>
+    <button onclick="makeBw()">Black & White</button>
+
+    <script>
+        function makeBw(){
+            document.getElementById("photo").style.filter="grayscale(100%)";
+        }
+        function makeCl(){
+            document.getElementById("photo").style.filter="grayscale(0%)";
+        }
+        
+    </script>
+</body>
+</html>

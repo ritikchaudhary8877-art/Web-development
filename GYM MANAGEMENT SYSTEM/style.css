@@ -1,0 +1,388 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background: #0b0b0b;
+    color: white;
+    scroll-behavior: smooth;
+}
+
+/* Toast */
+.toast {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    background: linear-gradient(135deg, #ff8c00, #ff3c00);
+    padding: 14px 22px;
+    border-radius: 10px;
+    font-weight: 500;
+    z-index: 9999;
+    opacity: 0;
+    transform: translateY(-30px);
+    transition: 0.4s;
+}
+
+.toast.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Navbar */
+.navbar {
+    position: fixed;
+    width: 100%;
+    padding: 20px 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1000;
+    background: rgba(0,0,0,0.6);
+    backdrop-filter: blur(12px);
+}
+
+.logo {
+    font-size: 22px;
+    font-weight: 700;
+    color: #ff8c00;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+    gap: 22px;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+    transition: 0.3s;
+}
+
+.nav-links a:hover {
+    color: #ff8c00;
+}
+
+.menu-btn {
+    display: none;
+    font-size: 28px;
+    cursor: pointer;
+}
+
+/* Hero */
+.hero {
+    height: 100vh;
+    background: url('https://images.unsplash.com/photo-1534438327276-14e5300c3a48?auto=format&fit=crop&w=1600&q=80');
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.65);
+}
+
+.hero-content {
+    position: relative;
+    z-index: 2;
+    max-width: 800px;
+    padding: 20px;
+}
+
+.hero h1 {
+    font-size: 60px;
+    font-weight: 800;
+    line-height: 1.2;
+}
+
+.hero p {
+    font-size: 20px;
+    margin: 20px 0 35px;
+    color: #ddd;
+}
+
+.hero-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.btn {
+    padding: 14px 28px;
+    border-radius: 10px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+.primary-btn {
+    background: linear-gradient(135deg, #ff8c00, #ff3c00);
+    color: white;
+}
+
+.secondary-btn {
+    border: 2px solid white;
+    color: white;
+}
+
+.btn:hover {
+    transform: translateY(-5px);
+}
+
+/* Section Common */
+section {
+    padding: 100px 8%;
+    text-align: center;
+}
+
+section h2 {
+    font-size: 40px;
+    margin-bottom: 40px;
+}
+
+/* Stats */
+.stats-container {
+    display: flex;
+    gap: 25px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.stat-card {
+    background: rgba(255,255,255,0.06);
+    border: 1px solid rgba(255,255,255,0.1);
+    padding: 35px;
+    width: 240px;
+    border-radius: 20px;
+    backdrop-filter: blur(12px);
+    transition: 0.3s;
+}
+
+.stat-card:hover {
+    transform: translateY(-10px);
+}
+
+.stat-card i {
+    font-size: 40px;
+    color: #ff8c00;
+    margin-bottom: 15px;
+}
+
+.counter {
+    font-size: 36px;
+    font-weight: 700;
+}
+
+/* Plans */
+.plan-container {
+    display: flex;
+    gap: 25px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.card {
+    background: #171717;
+    padding: 40px;
+    width: 300px;
+    border-radius: 20px;
+    position: relative;
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+}
+
+.featured {
+    border: 2px solid #ff8c00;
+}
+
+.badge {
+    position: absolute;
+    top: -12px;
+    right: 20px;
+    background: #ff8c00;
+    padding: 8px 14px;
+    border-radius: 20px;
+    font-size: 12px;
+}
+
+.card h1 {
+    font-size: 50px;
+    margin: 15px 0;
+    color: #ff8c00;
+}
+
+.card ul {
+    list-style: none;
+    margin: 25px 0;
+}
+
+.card ul li {
+    margin: 12px 0;
+}
+
+.card button {
+    padding: 12px 25px;
+    border: none;
+    background: linear-gradient(135deg, #ff8c00, #ff3c00);
+    color: white;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+/* Trainers */
+.trainer-container {
+    display: flex;
+    gap: 25px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.trainer-card {
+    width: 280px;
+    background: #171717;
+    border-radius: 20px;
+    overflow: hidden;
+    transition: 0.3s;
+}
+
+.trainer-card:hover {
+    transform: scale(1.05);
+}
+
+.trainer-card img {
+    width: 100%;
+    height: 320px;
+    object-fit: cover;
+}
+
+.trainer-card h3 {
+    margin-top: 20px;
+}
+
+/* Forms */
+form,
+.bmi-box,
+.contact-box {
+    max-width: 500px;
+    margin: auto;
+    background: rgba(255,255,255,0.06);
+    padding: 35px;
+    border-radius: 20px;
+    backdrop-filter: blur(12px);
+}
+
+input,
+select {
+    width: 100%;
+    padding: 14px;
+    margin: 12px 0;
+    border: none;
+    border-radius: 10px;
+    font-size: 16px;
+}
+
+form button,
+.bmi button {
+    width: 100%;
+    padding: 14px;
+    border: none;
+    border-radius: 10px;
+    background: linear-gradient(135deg, #ff8c00, #ff3c00);
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+#successMsg,
+#bmiResult {
+    margin-top: 20px;
+    color: lightgreen;
+    font-weight: 500;
+}
+
+/* Testimonials */
+.testimonial-container {
+    display: flex;
+    gap: 25px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.testimonial-card {
+    width: 300px;
+    padding: 30px;
+    background: #171717;
+    border-radius: 20px;
+    font-style: italic;
+    transition: 0.3s;
+}
+
+.testimonial-card:hover {
+    transform: translateY(-8px);
+}
+
+/* Contact */
+.contact-box p {
+    margin: 15px 0;
+    font-size: 18px;
+}
+
+.contact-box i {
+    color: #ff8c00;
+    margin-right: 10px;
+}
+
+/* Footer */
+footer {
+    background: #000;
+    padding: 25px;
+    text-align: center;
+    color: #aaa;
+}
+
+/* Responsive */
+@media (max-width: 992px) {
+    .hero h1 {
+        font-size: 45px;
+    }
+
+    .navbar {
+        padding: 20px 30px;
+    }
+}
+
+@media (max-width: 768px) {
+    .nav-links {
+        display: none;
+    }
+
+    .menu-btn {
+        display: block;
+    }
+
+    .hero h1 {
+        font-size: 34px;
+    }
+
+    .hero-buttons {
+        flex-direction: column;
+    }
+
+    section h2 {
+        font-size: 30px;
+    }
+}

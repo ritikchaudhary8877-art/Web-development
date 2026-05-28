@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alpha Muscle House | Premium Gym</title>
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+
+    <!-- Toast Notification -->
+    <div id="toast" class="toast"></div>
+
+    <!-- Navbar -->
+    <header>
+        <nav class="navbar">
+            <div class="logo">ALPHA MUSCLE HOUSE</div>
+
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#stats">Stats</a></li>
+                <li><a href="#plans">Plans</a></li>
+                <li><a href="#trainers">Trainers</a></li>
+                <li><a href="#register">Register</a></li>
+                <li><a href="#bmi">BMI</a></li>
+                <li><a href="#testimonials">Reviews</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+
+            <div class="menu-btn">
+                <i class="fas fa-bars"></i>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="overlay"></div>
+
+        <div class="hero-content">
+            <h1>Transform Your Body.<br>Transform Your Life.</h1>
+            <p>Train harder. Get stronger. Become unstoppable.</p>
+
+            <div class="hero-buttons">
+                <a href="#register" class="btn primary-btn">Join Now</a>
+                <a href="#plans" class="btn secondary-btn">View Plans</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Stats Section -->
+    <section id="stats" class="stats">
+        <h2>Why Choose Alpha Muscle House?</h2>
+
+        <div class="stats-container">
+            <div class="stat-card">
+                <i class="fas fa-dumbbell"></i>
+                <h3 class="counter" data-target="500">0</h3>
+                <p>Active Members</p>
+            </div>
+
+            <div class="stat-card">
+                <i class="fas fa-user-tie"></i>
+                <h3 class="counter" data-target="20">0</h3>
+                <p>Expert Trainers</p>
+            </div>
+
+            <div class="stat-card">
+                <i class="fas fa-award"></i>
+                <h3 class="counter" data-target="10">0</h3>
+                <p>Years Experience</p>
+            </div>
+
+            <div class="stat-card">
+                <i class="fas fa-heartbeat"></i>
+                <h3 class="counter" data-target="1000">0</h3>
+                <p>Transformations</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Membership Plans -->
+    <section id="plans" class="plans">
+        <h2>Membership Plans</h2>
+
+        <div class="plan-container">
+            <div class="card">
+                <h3>Basic</h3>
+                <h1>₹999</h1>
+                <p>/ month</p>
+
+                <ul>
+                    <li>Gym Access</li>
+                    <li>Locker Facility</li>
+                    <li>Basic Equipment</li>
+                </ul>
+
+                <button>Choose Plan</button>
+            </div>
+
+            <div class="card featured">
+                <span class="badge">Popular</span>
+                <h3>Standard</h3>
+                <h1>₹1999</h1>
+                <p>/ month</p>
+
+                <ul>
+                    <li>Everything in Basic</li>
+                    <li>Personal Trainer</li>
+                    <li>Diet Consultation</li>
+                </ul>
+
+                <button>Choose Plan</button>
+            </div>
+
+            <div class="card">
+                <h3>Premium</h3>
+                <h1>₹2999</h1>
+                <p>/ month</p>
+
+                <ul>
+                    <li>Everything in Standard</li>
+                    <li>Unlimited Classes</li>
+                    <li>VIP Support</li>
+                </ul>
+
+                <button>Choose Plan</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Trainers -->
+    <section id="trainers" class="trainers">
+        <h2>Meet Our Trainers</h2>
+
+        <div class="trainer-container">
+            <div class="trainer-card">
+                <img src="https://images.unsplash.com/photo-1567013127542-490d757e51fc?auto=format&fit=crop&w=500&q=80" alt="">
+                <h3>Rahul Sharma</h3>
+                <p>Strength Coach</p>
+            </div>
+
+            <div class="trainer-card">
+                <img src="https://images.unsplash.com/photo-1517836357463-d25dfeac3438?auto=format&fit=crop&w=500&q=80" alt="">
+                <h3>Vikram Singh</h3>
+                <p>Bodybuilding Expert</p>
+            </div>
+
+            <div class="trainer-card">
+                <img src="https://images.unsplash.com/photo-1541534741688-6078c6bfb5c5?auto=format&fit=crop&w=500&q=80" alt="">
+                <h3>Priya Mehta</h3>
+                <p>Fitness Trainer</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Registration -->
+    <section id="register" class="register">
+        <h2>Member Registration</h2>
+
+        <form id="registerForm">
+            <input type="text" id="name" placeholder="Enter Full Name" required>
+            <input type="email" id="email" placeholder="Enter Email" required>
+            <input type="tel" id="phone" placeholder="Enter Phone Number" required>
+
+            <select id="membership">
+                <option>Basic</option>
+                <option>Standard</option>
+                <option>Premium</option>
+            </select>
+
+            <button type="submit">Register Now</button>
+        </form>
+
+        <p id="successMsg"></p>
+    </section>
+
+    <!-- BMI Calculator -->
+    <section id="bmi" class="bmi">
+        <h2>BMI Calculator</h2>
+
+        <div class="bmi-box">
+            <input type="number" id="weight" placeholder="Weight in kg">
+            <input type="number" id="height" placeholder="Height in meters">
+            <button onclick="calculateBMI()">Calculate BMI</button>
+            <p id="bmiResult"></p>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section id="testimonials" class="testimonials">
+        <h2>What Our Members Say</h2>
+
+        <div class="testimonial-container">
+            <div class="testimonial-card">
+                <p>"Best gym experience ever! Amazing trainers and environment."</p>
+                <h4>- Aman</h4>
+            </div>
+
+            <div class="testimonial-card">
+                <p>"Lost 12kg in 4 months. Highly recommended."</p>
+                <h4>- Neha</h4>
+            </div>
+
+            <div class="testimonial-card">
+                <p>"Premium feel with world-class equipment."</p>
+                <h4>- Rohit</h4>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="contact">
+        <h2>Contact Us</h2>
+
+        <div class="contact-box">
+            <p><i class="fas fa-envelope"></i> alphamusclegym@gmail.com</p>
+            <p><i class="fas fa-phone"></i> +91 9876543210</p>
+            <p><i class="fas fa-location-dot"></i> Greater Noida West, India</p>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>© 2026 Alpha Muscle House | All Rights Reserved</p>
+    </footer>
+
+    <script src="./script.js"></script>
+</body>
+</html>
